@@ -37,6 +37,16 @@ public class Program2 {
 		
 		System.out.println("Insert completed! Id department = " + dep.getId());
 		
+		System.out.println("\n=== TEST 5: departement update ===");
+		
+		dep = depDao.findById(6);
+		
+		dep.setName("Construction");
+		
+		depDao.update(dep);
+		
+		System.out.println("Update completed!");
+		
 	}
 
 }
